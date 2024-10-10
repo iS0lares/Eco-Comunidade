@@ -135,6 +135,7 @@
               color="#A2A644"
               class="mt-1"
               prepend-icon="mdi-leaf"
+              append-icon="mdi-close"
               title="Atividades Principais"
             >
               <v-card-text class="bg-surface-light pt-4">

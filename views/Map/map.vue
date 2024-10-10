@@ -3,9 +3,9 @@
     <v-col cols="12">
       <LMap
         ref="map"
-        style="height: 95%; margin-top: 65px"
         :zoom="zoom"
-        :center="[-12.940867721430083, -38.43458550213431]"
+        :center="[-12.992908382756275, -38.47495749944153]"
+        :use-global-leaflet="false"
       >
         <LTileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -13,17 +13,18 @@
           layer-type="base"
           name="OpenStreetMap"
         />
-        <LMarker :lat-lng="[-12.988732264128709, -38.46202724516911]" />
-        <LMarker :lat-lng="[-13.012232276139143, -38.49106629785513]" />
+        <LMarker :lat-lng="[-12.989919327572952, -38.46204711415399]" />
+        <LMarker :lat-lng="[-12.991635173523642, -38.50070148041333]" />
+        <LMarker :lat-lng="[-13.012210107179213, -38.49109086968087]" />
       </LMap>
     </v-col>
   </v-row>
-  <Footer class="mt-4" />
+  <Footer class="mt-0" />
 </template>
 
 <script setup lang="ts">
 import Footer from "~/components/Footer.vue";
-const zoom = ref(12);
+const zoom = ref(13);
 </script>
 
 <style>
