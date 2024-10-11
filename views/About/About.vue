@@ -63,12 +63,15 @@
             >Visão Geral</v-btn
           >
           <v-dialog v-model="openGeneralVision">
-            <v-card
-              color="#A2A644"
-              class="mx-auto"
-              prepend-icon="mdi-leaf"
-              title="Visão Geral"
-            >
+            <v-card color="#A2A644" class="mx-auto">
+              <v-card-title class="d-flex">
+                <v-icon left>mdi-leaf</v-icon>
+                Visão Geral
+                <v-spacer></v-spacer>
+                <v-icon right @click="openGeneralVision = !openGeneralVision"
+                  >mdi-close</v-icon
+                >
+              </v-card-title>
               <v-card-text class="bg-surface-light pt-4">
                 O Projeto Ecocomunidade é uma iniciativa inovadora que visa
                 transformar a interação das comunidades locais com o meio
@@ -89,12 +92,15 @@
             >Objetivos</v-btn
           >
           <v-dialog v-model="openObjects">
-            <v-card
-              color="#A2A644"
-              class="mx-auto mt-10"
-              prepend-icon="mdi-leaf"
-              title="Objetivos"
-            >
+            <v-card color="#A2A644" class="mx-auto mt-10">
+              <v-card-title class="d-flex">
+                <v-icon left>mdi-leaf</v-icon>
+                Objetivos
+                <v-spacer></v-spacer>
+                <v-icon right @click="openObjects = !openObjects"
+                  >mdi-close</v-icon
+                >
+              </v-card-title>
               <v-card-text class="bg-surface-light pt-4">
                 Promover a Sustentabilidade Ambiental: <br />
                 O projeto tem como objetivo central incentivar práticas
@@ -131,13 +137,15 @@
             >Atividades Principais</v-btn
           >
           <v-dialog v-model="openMainTasks">
-            <v-card
-              color="#A2A644"
-              class="mt-1"
-              prepend-icon="mdi-leaf"
-              append-icon="mdi-close"
-              title="Atividades Principais"
-            >
+            <v-card color="#A2A644" class="mt-1">
+              <v-card-title class="d-flex">
+                <v-icon left>mdi-leaf</v-icon>
+                Atividades Principais
+                <v-spacer></v-spacer>
+                <v-icon right @click="openMainTasks = !openMainTasks"
+                  >mdi-close</v-icon
+                >
+              </v-card-title>
               <v-card-text class="bg-surface-light pt-4">
                 Horta Comunitária: Descrição: A criação de uma horta comunitária
                 é uma das principais iniciativas do projeto. Localizada em um
