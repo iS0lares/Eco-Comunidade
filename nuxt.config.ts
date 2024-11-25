@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   routeRules: {
-    "/": { redirect: "/Home" },
+    "/": { redirect: "/login" },
   },
   modules: [
     (_options, nuxt) => {
